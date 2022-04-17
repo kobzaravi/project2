@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "demoTest": "testcafe chrome tests/Sesion2/firstTest.js"
+    "demoTest": "testcafe chrome tests/Sesion2/selector.js"
   }
 }
