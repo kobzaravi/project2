@@ -1,3 +1,4 @@
+import { AngularJSSelector } from 'testcafe-angular-selectors';
 import { Selector } from 'testcafe';
 
 fixture `My fixture`
@@ -11,4 +12,11 @@ test('Obtain Element State', async t => {
     .wait(5000)
 
     const firstInputChecked = await gobuttonInput.checked; // returns true
+});
+
+test('add new item', async t => {
+    await t
+        .typeText(AngularJSSelector.byModel('newTodo'), 'new item')
+        .pressKey('enter')
+        .expect(Selector('#todo-list').visible).ok();
 });

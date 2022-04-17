@@ -1,5 +1,9 @@
 {
   "scripts": {
     "demoTest": "testcafe chrome tests/Sesion2/selector.js"
+  },
+  "dependencies": {
+    "testcafe": "^1.18.5",
+    "testcafe-angular-selectors": "^0.4.1"
   }
 }
